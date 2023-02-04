@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import ExpenseItem from './components/ExpenseItem';
+import ExpenseItem from './components/Expenses/ExpenseItem';
+import Expenses from './components/Expenses/Expenses';
 
 function App() {
   //list of expense will be coming from back-end
@@ -12,9 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      {expenses.map((expense)=>{
-        return <ExpenseItem key={expense.id} expense={expense}/>
-      })}
+     <Expenses expenses={expenses}/>
     </div>
   );
 }
