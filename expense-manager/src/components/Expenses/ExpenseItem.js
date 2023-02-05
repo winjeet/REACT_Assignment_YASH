@@ -20,7 +20,7 @@ export default function ExpenseItem(props) {
             <h2>{title}</h2>
         <div className="expense-item__price"><span>&#x20B9;</span>{expenseAmount}</div>
         </div>
-        <button onClick={updateHandler}>Update</button>
+        
     </Card>
   )
 }
